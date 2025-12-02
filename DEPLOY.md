@@ -86,3 +86,6 @@ Si los colores no se ven:
 - Limpia la caché del navegador (Ctrl+Shift+R o Cmd+Shift+R)
 - Verifica que `bootstrap.min.css` y `style.css` estén actualizados
 
+
+
+
