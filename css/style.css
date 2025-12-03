@@ -161,12 +161,12 @@
 /*** Header carousel ***/
 .header-carousel .owl-carousel-item {
     position: relative;
-    min-height: 650px;
+    min-height: 450px;
 }
 
 @media (max-width: 768px) {
     .header-carousel .owl-carousel-item {
-        min-height: 500px;
+        min-height: 350px;
     }
     
     .header-carousel .owl-carousel-item .col-lg-6:last-child {
@@ -459,6 +459,4 @@ body {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
     color: #1a1d56;
-}
-    border-right: none;
 }
