@@ -41,11 +41,12 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow sticky-top p-0" style="background-color: #ae0c26;">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"><i class="fa fa-graduation-cap me-3"></i>Colegio Andino</h2>
+            <img src="img/logo-ca.png" alt="Colegio Andino" style="height: 60px; margin-right: 15px;">
+            <h2 class="m-0 text-white" style="font-family: 'Gilroy', sans-serif; font-weight: 700;">COLEGIO ANDINO</h2>
         </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" style="border-color: rgba(255,255,255,0.5);">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -63,7 +64,7 @@
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Contacto</a>
             </div>
-            <a href="contact.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Admisión<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="contact.html" class="btn btn-light py-4 px-lg-5 d-none d-lg-block" style="background-color: #ffffff; color: #ae0c26; font-weight: 600; border-radius: 5px;">Admisión<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -73,16 +74,22 @@
     <div class="container-fluid p-0 mb-5">
         <div class="owl-carousel header-carousel position-relative">
             <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/colegio/HOME6.png" alt="Colegio Andino">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(26, 26, 46, .7);">
+                <img class="img-fluid" src="img/colegio/HOME6.png" alt="Colegio Andino" style="object-fit: cover; width: 100%; height: 100%;">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(26, 29, 86, .85);">
                     <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-sm-10 col-lg-8">
-                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Colegio Andino</h5>
-                                <h1 class="display-3 text-white animated slideInDown">112 Años Educando Juventudes</h1>
-                                <p class="fs-5 text-white mb-4 pb-2">Nuestro Colegio forma parte de una amplia tradición pedagógica y romántica, que brinda una formación integral en el desarrollo intelectual y cultural para el viaje.</p>
-                                <a href="about.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Conocer Más</a>
-                                <a href="contact.html" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Contáctanos</a>
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-lg-6 col-md-6">
+                                <h1 class="display-4 text-white mb-4 animated slideInDown" style="font-family: 'Gilroy', sans-serif; font-weight: 800; font-size: 3.5rem; line-height: 1.2;">La educación es la base de todo éxito</h1>
+                                <p class="fs-4 text-white mb-4 pb-2 animated slideInDown" style="font-family: 'Gilroy', sans-serif; font-weight: 500; font-size: 1.5rem;">El camino al conocimiento comienza aquí.</p>
+                                <a href="contact.html" class="btn btn-primary py-3 px-5 animated slideInLeft" style="background-color: #ae0c26; border: none; border-radius: 30px; font-family: 'Gilroy', sans-serif; font-weight: 600; font-size: 1.1rem;">
+                                    Postula aquí <i class="fa fa-arrow-right ms-2"></i>
+                                </a>
+                            </div>
+                            <div class="col-lg-5 col-md-6 text-center position-relative">
+                                <div style="position: relative; display: inline-block;">
+                                    <div style="position: absolute; top: -20px; right: -20px; width: 100%; height: 100%; background: linear-gradient(135deg, #ae0c26 0%, #ae0c26 100%); border-radius: 30px; z-index: 0; transform: rotate(-5deg); opacity: 0.9;"></div>
+                                    <img class="img-fluid position-relative animated slideInRight" src="img/colegio/HOME1.png" alt="Estudiante Colegio Andino" style="max-height: 550px; object-fit: contain; z-index: 1; position: relative; border-radius: 20px;">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -118,44 +125,44 @@
                 <!-- 112 Años de historia -->
                 <div class="col-lg-3 col-md-6 col-sm-6 text-center">
                     <div class="statistics-item">
-                        <div class="mb-3" style="color: #1a1a2e;">
-                            <img src="img/icons/calendar-check.svg" alt="Años de historia" style="width: 60px; height: 60px;">
+                        <div class="mb-3" style="color: #1a1d56; display: inline-block;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" viewBox="0 0 256 256"><path d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-38.34-85.66a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L116,164.69l42.34-42.35A8,8,0,0,1,169.66,122.34Z"></path></svg>
                         </div>
                         <h2 class="statistics-number" style="font-family: 'Gilroy', sans-serif; font-weight: 800; font-size: 30pt; color: #ae0c26; margin-bottom: 10px; line-height: 1.2;">112</h2>
-                        <p class="statistics-label" style="font-family: 'Gilroy', sans-serif; font-weight: 700; font-size: 20pt; color: #1a1a2e; margin: 0;">Años de historia</p>
+                        <p class="statistics-label" style="font-family: 'Gilroy', sans-serif; font-weight: 700; font-size: 20pt; color: #1a1d56; margin: 0;">Años de historia</p>
                     </div>
                 </div>
                 
                 <!-- 300 Promociones -->
                 <div class="col-lg-3 col-md-6 col-sm-6 text-center">
                     <div class="statistics-item">
-                        <div class="mb-3" style="color: #1a1a2e;">
-                            <img src="img/icons/trophy.svg" alt="Promociones" style="width: 60px; height: 60px;">
+                        <div class="mb-3" style="color: #1a1d56; display: inline-block;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" viewBox="0 0 256 256"><path d="M232,64H208V48a8,8,0,0,0-8-8H56a8,8,0,0,0-8,8V64H24A16,16,0,0,0,8,80V96a40,40,0,0,0,40,40h3.65A80.13,80.13,0,0,0,120,191.61V216H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16H136V191.58c31.94-3.23,58.44-25.64,68.08-55.58H208a40,40,0,0,0,40-40V80A16,16,0,0,0,232,64ZM48,120A24,24,0,0,1,24,96V80H48v32q0,4,.39,8Zm144-8.9c0,35.52-29,64.64-64,64.9a64,64,0,0,1-64-64V56H192ZM232,96a24,24,0,0,1-24,24h-.5a81.81,81.81,0,0,0,.5-8.9V80h24Z"></path></svg>
                         </div>
                         <h2 class="statistics-number" style="font-family: 'Gilroy', sans-serif; font-weight: 800; font-size: 30pt; color: #ae0c26; margin-bottom: 10px; line-height: 1.2;">300</h2>
-                        <p class="statistics-label" style="font-family: 'Gilroy', sans-serif; font-weight: 700; font-size: 20pt; color: #1a1a2e; margin: 0;">Promociones</p>
+                        <p class="statistics-label" style="font-family: 'Gilroy', sans-serif; font-weight: 700; font-size: 20pt; color: #1a1d56; margin: 0;">Promociones</p>
                     </div>
                 </div>
                 
                 <!-- 798 Estudiantes -->
                 <div class="col-lg-3 col-md-6 col-sm-6 text-center">
                     <div class="statistics-item">
-                        <div class="mb-3" style="color: #1a1a2e;">
-                            <img src="img/icons/graduation-cap.svg" alt="Estudiantes" style="width: 60px; height: 60px;">
+                        <div class="mb-3" style="color: #1a1d56; display: inline-block;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" viewBox="0 0 256 256"><path d="M251.76,88.94l-120-64a8,8,0,0,0-7.52,0l-120,64a8,8,0,0,0,0,14.12L32,117.87v48.42a15.91,15.91,0,0,0,4.06,10.65C49.16,191.53,78.51,216,128,216a130,130,0,0,0,48-8.76V240a8,8,0,0,0,16,0V199.51a115.63,115.63,0,0,0,27.94-22.57A15.91,15.91,0,0,0,224,166.29V117.87l27.76-14.81a8,8,0,0,0,0-14.12ZM128,200c-43.27,0-68.72-21.14-80-33.71V126.4l76.24,40.66a8,8,0,0,0,7.52,0L176,143.47v46.34C163.4,195.69,147.52,200,128,200Zm80-33.75a97.83,97.83,0,0,1-16,14.25V134.93l16-8.53ZM188,118.94l-.22-.13-56-29.87a8,8,0,0,0-7.52,14.12L171,128l-43,22.93L25,96,128,41.07,231,96Z"></path></svg>
                         </div>
                         <h2 class="statistics-number" style="font-family: 'Gilroy', sans-serif; font-weight: 800; font-size: 30pt; color: #ae0c26; margin-bottom: 10px; line-height: 1.2;">798</h2>
-                        <p class="statistics-label" style="font-family: 'Gilroy', sans-serif; font-weight: 700; font-size: 20pt; color: #1a1a2e; margin: 0;">Estudiantes</p>
+                        <p class="statistics-label" style="font-family: 'Gilroy', sans-serif; font-weight: 700; font-size: 20pt; color: #1a1d56; margin: 0;">Estudiantes</p>
                     </div>
                 </div>
                 
                 <!-- 4663 Áreas en m² -->
                 <div class="col-lg-3 col-md-6 col-sm-6 text-center">
                     <div class="statistics-item">
-                        <div class="mb-3" style="color: #1a1a2e;">
-                            <img src="img/icons/building-apartment.svg" alt="Áreas" style="width: 60px; height: 60px;">
+                        <div class="mb-3" style="color: #1a1d56; display: inline-block;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" viewBox="0 0 256 256"><path d="M240,208h-8V72a8,8,0,0,0-8-8H184V40a8,8,0,0,0-8-8H80a8,8,0,0,0-8,8V96H32a8,8,0,0,0-8,8V208H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM40,112H80a8,8,0,0,0,8-8V48h80V72a8,8,0,0,0,8,8h40V208H152V168a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v40H40Zm96,96H120V176h16ZM112,72a8,8,0,0,1,8-8h16a8,8,0,0,1,0,16H120A8,8,0,0,1,112,72Zm0,32a8,8,0,0,1,8-8h16a8,8,0,0,1,0,16H120A8,8,0,0,1,112,104Zm56,0a8,8,0,0,1,8-8h16a8,8,0,0,1,0,16H176A8,8,0,0,1,168,104ZM88,136a8,8,0,0,1-8,8H64a8,8,0,0,1,0-16H80A8,8,0,0,1,88,136Zm0,32a8,8,0,0,1-8,8H64a8,8,0,0,1,0-16H80A8,8,0,0,1,88,168Zm24-32a8,8,0,0,1,8-8h16a8,8,0,0,1,0,16H120A8,8,0,0,1,112,136Zm56,0a8,8,0,0,1,8-8h16a8,8,0,0,1,0,16H176A8,8,0,0,1,168,136Zm0,32a8,8,0,0,1,8-8h16a8,8,0,0,1,0,16H176A8,8,0,0,1,168,168Z"></path></svg>
                         </div>
                         <h2 class="statistics-number" style="font-family: 'Gilroy', sans-serif; font-weight: 800; font-size: 30pt; color: #ae0c26; margin-bottom: 10px; line-height: 1.2;">4663</h2>
-                        <p class="statistics-label" style="font-family: 'Gilroy', sans-serif; font-weight: 700; font-size: 20pt; color: #1a1a2e; margin: 0;">Áreas en m²</p>
+                        <p class="statistics-label" style="font-family: 'Gilroy', sans-serif; font-weight: 700; font-size: 20pt; color: #1a1d56; margin: 0;">Áreas en m²</p>
                     </div>
                 </div>
             </div>
@@ -176,7 +183,7 @@
                 </div>
                 <!-- Contenido a la derecha -->
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <h1 class="mb-4" style="font-family: 'Gilroy', sans-serif; font-weight: 800; font-size: 47pt; color: #1a1a2e; border-bottom: 2px solid #ae0c26; padding-bottom: 15px; display: inline-block;">Desde 1913</h1>
+                    <h1 class="mb-4" style="font-family: 'Gilroy', sans-serif; font-weight: 800; font-size: 47pt; color: #1a1d56; border-bottom: 2px solid #ae0c26; padding-bottom: 15px; display: inline-block;">Desde 1913</h1>
                     <p class="mb-4" style="font-family: 'Gilroy', sans-serif; font-size: 18pt; color: #52565b; line-height: 1.6; margin-top: 30px;">
                         Nuestro Colegio forma parte de una amplia tradición pedagógica y humanista, que brinda una formación integral en el desarrollo intelectual y valores para la vida.
                     </p>
@@ -282,7 +289,7 @@
     <div class="container-xxl py-5" style="background: #ffffff;">
         <div class="container">
             <div class="text-center mb-5">
-                <h1 class="mb-4" style="font-family: 'Gilroy', sans-serif; font-weight: 800; font-size: 47pt; color: #1a1a2e;">Servicios Educativos</h1>
+                <h1 class="mb-4" style="font-family: 'Gilroy', sans-serif; font-weight: 800; font-size: 47pt; color: #1a1d56;">Servicios Educativos</h1>
             </div>
             <div class="row g-4">
                 <!-- Laboratorio de Ciencias -->
@@ -291,8 +298,8 @@
                         <img class="img-fluid w-100" src="img/colegio/HOME3.png" alt="Laboratorio de Ciencias" style="object-fit: cover; border-radius: 8px;">
                         <div class="position-absolute bottom-0 start-0 end-0 bg-white p-3" style="border-radius: 0 0 8px 8px;">
                             <div class="d-flex justify-content-between align-items-center">
-                                <h5 class="mb-0" style="font-family: 'Gilroy', sans-serif; font-weight: 600; font-size: 18pt; color: #1a1a2e;">Laboratorio de Ciencias</h5>
-                                <i class="fa fa-arrow-right" style="color: #1a1a2e; font-size: 18pt;"></i>
+                                <h5 class="mb-0" style="font-family: 'Gilroy', sans-serif; font-weight: 600; font-size: 18pt; color: #1a1d56;">Laboratorio de Ciencias</h5>
+                                <i class="fa fa-arrow-right" style="color: #1a1d56; font-size: 18pt;"></i>
                             </div>
                         </div>
                     </div>
@@ -304,8 +311,8 @@
                         <img class="img-fluid w-100" src="img/colegio/HOME4.png" alt="Orquesta Sinfónica" style="object-fit: cover; border-radius: 8px;">
                         <div class="position-absolute bottom-0 start-0 end-0 bg-white p-3" style="border-radius: 0 0 8px 8px;">
                             <div class="d-flex justify-content-between align-items-center">
-                                <h5 class="mb-0" style="font-family: 'Gilroy', sans-serif; font-weight: 600; font-size: 18pt; color: #1a1a2e;">Orquesta Sinfónica</h5>
-                                <i class="fa fa-arrow-right" style="color: #1a1a2e; font-size: 18pt;"></i>
+                                <h5 class="mb-0" style="font-family: 'Gilroy', sans-serif; font-weight: 600; font-size: 18pt; color: #1a1d56;">Orquesta Sinfónica</h5>
+                                <i class="fa fa-arrow-right" style="color: #1a1d56; font-size: 18pt;"></i>
                             </div>
                         </div>
                     </div>
@@ -317,8 +324,8 @@
                         <img class="img-fluid w-100" src="img/colegio/HOME5.png" alt="Biblioteca" style="object-fit: cover; border-radius: 8px;">
                         <div class="position-absolute bottom-0 start-0 end-0 bg-white p-3" style="border-radius: 0 0 8px 8px;">
                             <div class="d-flex justify-content-between align-items-center">
-                                <h5 class="mb-0" style="font-family: 'Gilroy', sans-serif; font-weight: 600; font-size: 18pt; color: #1a1a2e;">Biblioteca</h5>
-                                <i class="fa fa-arrow-right" style="color: #1a1a2e; font-size: 18pt;"></i>
+                                <h5 class="mb-0" style="font-family: 'Gilroy', sans-serif; font-weight: 600; font-size: 18pt; color: #1a1d56;">Biblioteca</h5>
+                                <i class="fa fa-arrow-right" style="color: #1a1d56; font-size: 18pt;"></i>
                             </div>
                         </div>
                     </div>
@@ -335,7 +342,7 @@
             <div class="row g-5 align-items-center">
                 <!-- Contenido a la izquierda -->
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h1 class="mb-4" style="font-family: 'Gilroy', sans-serif; font-weight: 800; font-size: 47pt; color: #1a1a2e;">Somos reconocidos</h1>
+                    <h1 class="mb-4" style="font-family: 'Gilroy', sans-serif; font-weight: 800; font-size: 47pt; color: #1a1d56;">Somos reconocidos</h1>
                     <p class="mb-4" style="font-family: 'Gilroy', sans-serif; font-size: 18pt; color: #52565b; line-height: 1.6;">
                         Por la excelencia académica y rendimiento de nuestros estudiantes. Además, del buen desempeño en los exámenes internacionales de Certificación del Idioma Inglés. Y por las buenas prácticas laborales impartidas en el Colegio.
                     </p>
@@ -388,7 +395,7 @@
                     <div class="row g-3">
                         <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
                             <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="img/cat-1.jpg" alt="">
+                                <div class="img-fluid" style="width: 100%; height: 250px; background-color: #e0e0e0; border: 1px dashed #999;"></div>
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
                                     <h5 class="m-0">Diseño Web</h5>
                                     <small class="text-primary">49 Cursos</small>
@@ -397,7 +404,7 @@
                         </div>
                         <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
                             <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="img/cat-2.jpg" alt="">
+                                <div class="img-fluid" style="width: 100%; height: 200px; background-color: #e0e0e0; border: 1px dashed #999;"></div>
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
                                     <h5 class="m-0">Diseño Gráfico</h5>
                                     <small class="text-primary">49 Cursos</small>
@@ -406,7 +413,7 @@
                         </div>
                         <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
                             <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="img/cat-3.jpg" alt="">
+                                <div class="img-fluid" style="width: 100%; height: 200px; background-color: #e0e0e0; border: 1px dashed #999;"></div>
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
                                     <h5 class="m-0">Edición de Video</h5>
                                     <small class="text-primary">49 Cursos</small>
@@ -417,7 +424,7 @@
                 </div>
                 <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
                     <a class="position-relative d-block h-100 overflow-hidden" href="">
-                        <img class="img-fluid position-absolute w-100 h-100" src="img/cat-4.jpg" alt="" style="object-fit: cover;">
+                        <div class="img-fluid position-absolute w-100 h-100" style="background-color: #e0e0e0; border: 1px dashed #999; min-height: 350px;"></div>
                         <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin:  1px;">
                             <h5 class="m-0">Marketing Digital</h5>
                             <small class="text-primary">49 Cursos</small>
@@ -441,7 +448,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="course-item bg-light">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/course-1.jpg" alt="">
+                            <div class="img-fluid" style="width: 100%; height: 250px; background-color: #e0e0e0; border: 1px dashed #999;"></div>
                             <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
                                 <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Ver Más</a>
                                 <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Inscribirse</a>
@@ -469,7 +476,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="course-item bg-light">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/course-2.jpg" alt="">
+                            <div class="img-fluid" style="width: 100%; height: 250px; background-color: #e0e0e0; border: 1px dashed #999;"></div>
                             <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
                                 <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Ver Más</a>
                                 <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Inscribirse</a>
@@ -497,7 +504,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="course-item bg-light">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/course-3.jpg" alt="">
+                            <div class="img-fluid" style="width: 100%; height: 250px; background-color: #e0e0e0; border: 1px dashed #999;"></div>
                             <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
                                 <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Ver Más</a>
                                 <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Inscribirse</a>
@@ -539,7 +546,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item bg-light">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-1.jpg" alt="">
+                            <div class="img-fluid" style="width: 100%; height: 300px; background-color: #e0e0e0; border: 1px dashed #999;"></div>
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
                             <div class="bg-light d-flex justify-content-center pt-2 px-1">
@@ -557,7 +564,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item bg-light">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-2.jpg" alt="">
+                            <div class="img-fluid" style="width: 100%; height: 300px; background-color: #e0e0e0; border: 1px dashed #999;"></div>
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
                             <div class="bg-light d-flex justify-content-center pt-2 px-1">
@@ -575,7 +582,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item bg-light">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-3.jpg" alt="">
+                            <div class="img-fluid" style="width: 100%; height: 300px; background-color: #e0e0e0; border: 1px dashed #999;"></div>
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
                             <div class="bg-light d-flex justify-content-center pt-2 px-1">
@@ -593,7 +600,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="team-item bg-light">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-4.jpg" alt="">
+                            <div class="img-fluid" style="width: 100%; height: 300px; background-color: #e0e0e0; border: 1px dashed #999;"></div>
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
                             <div class="bg-light d-flex justify-content-center pt-2 px-1">
