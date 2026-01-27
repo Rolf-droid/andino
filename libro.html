@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Colegio Andino - Niveles Educativos - Educación Primaria</title>
+    <title>Libro de Reclamaciones - Colegio Andino</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Colegio Andino, educación, colegio, Lima, Perú" name="keywords">
-    <meta content="Colegio Andino - Niveles Educativos - Educación Primaria" name="description">
+    <meta content="Colegio Andino, libro de reclamaciones, educación, Huancayo" name="keywords">
+    <meta content="Colegio Andino - Libro de Reclamaciones" name="description">
 
     <!-- Favicon -->
     <link href="img/FAVICON.png" rel="icon">
@@ -28,6 +28,15 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        .libro-form .form-label { font-family: 'Gilroy', sans-serif; font-weight: 600; color: #52565b; }
+        .libro-form .form-control, .libro-form .form-select { background-color: #f5f5f5; border: 1px solid #dee2e6; border-radius: 6px; padding: 0.6rem 0.85rem; }
+        .libro-form .form-control:focus { background-color: #fff; border-color: #ae0c26; box-shadow: 0 0 0 0.2rem rgba(174, 12, 38, 0.15); }
+        .libro-form .form-check-input:checked { background-color: #ae0c26; border-color: #ae0c26; }
+        .libro-form .form-check-input:focus { box-shadow: 0 0 0 0.2rem rgba(174, 12, 38, 0.15); }
+        .libro-form .btn-enviar { background-color: #ae0c26; border: none; color: #fff; font-weight: 700; padding: 0.75rem 2.5rem; border-radius: 8px; text-transform: uppercase; }
+        .libro-form .btn-enviar:hover { background-color: #8a0a1e; color: #fff; }
+    </style>
 </head>
 
 <body>
@@ -65,6 +74,7 @@
                         <a href="orientacion.html" class="dropdown-item">Orientación Educativa</a>
                         <a href="capellania.html" class="dropdown-item">Capellanía</a>
                         <a href="coordinacion.html" class="dropdown-item">Coordinación Académica</a>
+                        <a href="actividades.html" class="dropdown-item">Actividades</a>
                     </div>
                 </div>
                 <a href="admision.html" class="nav-item nav-link">Admisión</a>
@@ -78,53 +88,138 @@
     <!-- Navbar End -->
 
 
-    <!-- Sección Niveles Educativos Start -->
-    <div class="container-fluid" style="background: #ffffff; padding: 0;">
-        <!-- Línea roja superior -->
+    <!-- Banner Libro de Reclamaciones Start -->
+    <div class="container-fluid p-0 position-relative" style="margin-top: 0;">
+        <!-- Barra roja superior -->
         <div style="height: 5px; background-color: #ae0c26; width: 100%;"></div>
         
-        <div class="container py-5">
-            <div class="row g-5 align-items-center">
-                <!-- Imagen a la izquierda -->
-                <div class="col-lg-5 col-md-6">
-                    <div class="position-relative h-100 d-flex align-items-center justify-content-center">
-                        <img class="img-fluid" src="img/niveles/IMG_2846.PNG" alt="II Nivel - Educación Primaria" style="max-width: 100%; height: auto; object-fit: contain;">
+        <!-- Banner principal -->
+        <div class="position-relative" style="min-height: 600px; background-image: url('img/nosotros/seccion.jpg'); background-size: cover; background-position: center;">
+            <!-- Overlay azul oscuro -->
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(26, 29, 86, 0.75);"></div>
+            
+            <div class="container-fluid h-100">
+                <div class="row h-100 align-items-center position-relative" style="min-height: 600px;">
+                    <div class="col-12 text-center position-relative" style="z-index: 2; padding: 80px 40px;">
+                        <h1 class="mb-0 animated slideInDown" style="font-family: 'Gilroy', sans-serif; font-weight: 800; font-size: 75pt; color: #ffffff; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); line-height: 1.2;">
+                            LIBRO DE<br>
+                            RECLAMACIONES
+                        </h1>
                     </div>
-                </div>
-                
-                <!-- Contenido a la derecha -->
-                <div class="col-lg-7 col-md-6">
-                    <h1 class="mb-2" style="font-family: 'Gilroy', sans-serif; font-weight: 800; font-size: 42pt; color: #1a1d56; margin-bottom: 10px;">
-                        Niveles Educativos
-                    </h1>
-                    <p class="mb-4" style="font-family: 'Gilroy', sans-serif; font-size: 18pt; color: #52565b; margin-bottom: 20px;">
-                        > Educación Primaria
-                    </p>
-                    
-                    <h2 class="mb-4" style="font-family: 'Gilroy', sans-serif; font-weight: 800; font-size: 36pt; color: #1a1d56; margin-bottom: 20px;">
-                        Propuesta Educativa <span style="color: #ae0c26;">II NIVEL</span>
-                    </h2>
-                    
-                    <p class="mb-4" style="font-family: 'Gilroy', sans-serif; font-size: 16pt; color: #52565b; line-height: 1.8; text-align: justify; margin-bottom: 20px;">
-                        El Nivel II forma parte de la estructura pedagógica del Colegio Andino, abarcando el 3ro, 4to, 5to y 6to grado de Primaria, dirigido a estudiantes de 8 a 12 años. Nuestra formación integral busca desarrollar las capacidades intelectuales, artísticas, físicas y espirituales de nuestros estudiantes.
-                    </p>
-                    
-                    <p class="mb-4" style="font-family: 'Gilroy', sans-serif; font-size: 16pt; color: #52565b; line-height: 1.8; text-align: justify; margin-bottom: 20px;">
-                        La tarea educativa se centra en el ser humano como sujeto de autorrealización, lo cual se refleja en la filosofía del colegio, la organización, las normas internas, los procedimientos didácticos y las relaciones comunitarias. Asimismo, se enfatiza la dimensión afectiva y moral, fundamentada en la formación evangélica que brindamos.
-                    </p>
-                    
-                    <p class="mb-0" style="font-family: 'Gilroy', sans-serif; font-size: 16pt; color: #52565b; line-height: 1.8; text-align: justify;">
-                        La formación integral se complementa con talleres especializados, entre los que se incluyen: básquet, futsal, debate, francés, vóley, natación y clases de reforzamiento en comunicación y matemáticas.
-                    </p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Sección Niveles Educativos End -->
+    <!-- Banner Libro de Reclamaciones End -->
+
+
+    <!-- Formulario Libro de Reclamaciones Start -->
+    <div class="container-xxl py-5" style="background: #ffffff;">
+        <div class="container">
+            <form class="libro-form" id="formLibroReclamaciones" style="max-width: 800px; margin: 0 auto;">
+                
+                <!-- 1. Identificación del consumidor -->
+                <h2 class="mb-4" style="font-family: 'Gilroy', sans-serif; font-weight: 800; font-size: 1.1rem; color: #1a1d56; text-transform: uppercase; letter-spacing: 0.02em;">
+                    1. Identificación del consumidor reclamante
+                </h2>
+                <div class="row g-3 mb-4">
+                    <div class="col-md-6">
+                        <label class="form-label">Nombres <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" name="nombres" placeholder="Nombres" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Apellidos <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" name="apellidos" placeholder="Apellidos" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Correo <span class="text-danger">*</span></label>
+                        <input type="email" class="form-control" name="correo" placeholder="Correo" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Domicilio <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" name="domicilio" placeholder="Domicilio" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">DNI/CE <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" name="dni" placeholder="DNI o Carné de Extranjería" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Teléfono <span class="text-danger">*</span></label>
+                        <input type="tel" class="form-control" name="telefono" placeholder="Teléfono" required>
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label">Nombre de Padre o Madre (para el caso de menores de edad) <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" name="padre_madre" placeholder="Nombre de Padre o Madre (para el caso de menores de edad)">
+                    </div>
+                </div>
+
+                <!-- 2. Identificación del bien contratado -->
+                <h2 class="mb-3 mt-5" style="font-family: 'Gilroy', sans-serif; font-weight: 800; font-size: 1.1rem; color: #1a1d56; text-transform: uppercase; letter-spacing: 0.02em;">
+                    2. Identificación del bien contratado
+                </h2>
+                <div class="d-flex flex-wrap gap-4 mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="bien_contratado" id="bienServicio" value="servicio" checked>
+                        <label class="form-check-label" for="bienServicio">Servicio</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="bien_contratado" id="bienReclamo" value="reclamo">
+                        <label class="form-check-label" for="bienReclamo">Reclamo</label>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label class="form-label">Descripción <span class="text-danger">*</span></label>
+                    <textarea class="form-control" name="descripcion_bien" rows="4" placeholder="¿Cuál fue el servicio / producto y en qué oficina se encuentra?" required></textarea>
+                </div>
+
+                <!-- 3. Detalle de la reclamación -->
+                <h2 class="mb-3 mt-5" style="font-family: 'Gilroy', sans-serif; font-weight: 800; font-size: 1.1rem; color: #1a1d56; text-transform: uppercase; letter-spacing: 0.02em;">
+                    3. Detalle de la reclamación
+                </h2>
+                <div class="row g-4 mb-3">
+                    <div class="col-md-6">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="tipo_reclamo" id="tipoReclamo" value="reclamo" checked>
+                            <label class="form-check-label" for="tipoReclamo"><strong>Reclamo</strong></label>
+                        </div>
+                        <p class="small text-muted ms-4 mt-1 mb-0">Disconformidad relacionada a los productos o servicios.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="tipo_reclamo" id="tipoProducto" value="producto">
+                            <label class="form-check-label" for="tipoProducto"><strong>Producto</strong></label>
+                        </div>
+                        <p class="small text-muted ms-4 mt-1 mb-0">Disconformidad no relacionada a los productos o servicios, o malestar o descontento respecto a la atención al público.</p>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label class="form-label">Descripción del detalle <span class="text-danger">*</span></label>
+                    <textarea class="form-control" name="detalle_reclamo" rows="4" placeholder="Describa el detalle de su reclamación" required></textarea>
+                </div>
+
+                <!-- Texto legal -->
+                <p class="small mb-4" style="color: #52565b; line-height: 1.6;">
+                    La formulación del reclamo no impide acudir a otras vías de solución de controversias ni es requisito previo para interponer una denuncia ante el INDECOPI. El proveedor deberá dar respuesta al reclamo en un plazo no mayor a quince (15) días hábiles, previa comunicación al consumidor.
+                </p>
+
+                <!-- Política de privacidad -->
+                <div class="form-check mb-4">
+                    <input class="form-check-input" type="checkbox" name="politica" id="politica" required>
+                    <label class="form-check-label" for="politica">Acepto las Políticas de privacidad y protección de datos personales. <span class="text-danger">*</span></label>
+                </div>
+
+                <!-- Botón Enviar -->
+                <div class="text-start">
+                    <button type="submit" class="btn btn-enviar">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Formulario Libro de Reclamaciones End -->
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer pt-5 mt-0" style="margin-top: 0 !important; display: block !important; opacity: 1 !important;">
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-0" style="margin-top: 0 !important;">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
@@ -227,6 +322,13 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        document.getElementById('formLibroReclamaciones').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Gracias. Su reclamo ha sido registrado. Le daremos respuesta en un plazo no mayor a 15 días hábiles.');
+            this.reset();
+        });
+    </script>
 </body>
 
 </html>
