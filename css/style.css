@@ -485,3 +485,121 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
     color: #1a1d56;
 }
+
+
+/********** Responsive **********/
+/* Navbar: mismo ajuste para navbar-dark en móvil */
+@media (max-width: 991.98px) {
+    .navbar-dark .navbar-nav .nav-link {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+
+    .navbar .navbar-brand img {
+        max-height: 50px;
+        height: auto;
+    }
+}
+
+/* Tipografía, banners y bloques en tablet/móvil */
+@media (max-width: 768px) {
+    .hero-banner {
+        min-height: 420px !important;
+    }
+
+    .hero-banner .row .position-relative[style*="min-height"],
+    .hero-banner .row[style*="min-height"] {
+        min-height: 380px !important;
+    }
+
+    .banner-title {
+        font-size: 1.75rem !important;
+    }
+
+    .banner-img {
+        max-height: 320px !important;
+    }
+
+    .page-header h1,
+    .page-header .display-3 {
+        font-size: 1.75rem !important;
+        line-height: 1.3;
+    }
+
+    .page-header .container {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+
+    .container-xxl h1.mb-4,
+    .container-xxl h1.mb-0 {
+        font-size: 1.5rem !important;
+    }
+
+    .container-xxl .row.g-4 h2,
+    .container-xxl .row h2.mb-3 {
+        font-size: 1.5rem !important;
+    }
+
+    .container-xxl .row.g-4 p,
+    .container-xxl .row p.mb-0 {
+        font-size: 1rem !important;
+    }
+
+    .statistics-item {
+        min-height: auto !important;
+        padding: 24px 16px !important;
+        margin: 10px !important;
+    }
+
+    .statistics-number {
+        font-size: 1.75rem !important;
+    }
+
+    .statistics-label {
+        font-size: 0.95rem !important;
+    }
+
+    .back-to-top {
+        right: 20px;
+        bottom: 20px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-banner {
+        min-height: 360px !important;
+    }
+
+    .banner-title {
+        font-size: 1.5rem !important;
+    }
+
+    .banner-img {
+        max-height: 260px !important;
+    }
+
+    .page-header h1,
+    .page-header .display-3 {
+        font-size: 1.5rem !important;
+    }
+
+    /* Footer boletín: botón debajo del input en móvil */
+    .footer .position-relative.mx-auto {
+        max-width: 100% !important;
+    }
+
+    .footer .position-relative .form-control {
+        padding-right: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .footer .position-relative .btn {
+        position: static !important;
+        width: 100%;
+        margin-top: 0 !important;
+        margin-right: 0 !important;
+    }
+}
