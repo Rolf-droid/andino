@@ -51,10 +51,10 @@
         #modalComunicado .modal-content { width: fit-content; }
         #modalComunicado .modal-header,
         #modalComunicado .modal-footer { width: 100%; }
-        #modalComunicado .modal-body-comunicado { padding: 0; width: fit-content; }
-        #modalComunicado #carouselComunicado { width: fit-content; }
-        #modalComunicado .carousel-inner { width: fit-content; height: auto; }
-        #modalComunicado .carousel-item { width: fit-content; height: auto; }
+        #modalComunicado .modal-body-comunicado { padding: 0; overflow: hidden; }
+        #modalComunicado #carouselComunicado { overflow: hidden; }
+        #modalComunicado .carousel-inner { height: auto; }
+        #modalComunicado .carousel-item { height: auto; }
         @media (max-width: 576px) {
             #modalComunicado .modal-dialog { max-width: 98vw; margin: 0.5rem; }
         }
@@ -901,7 +901,30 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var modalComunicado = document.getElementById('modalComunicado');
+            var carouselComunicado = document.getElementById('carouselComunicado');
+            var modalBody = modalComunicado ? modalComunicado.querySelector('.modal-body-comunicado') : null;
+
+            function ajustarAnchoModal() {
+                if (!carouselComunicado || !modalBody) return;
+                var activeItem = carouselComunicado.querySelector('.carousel-item.active');
+                var img = activeItem ? activeItem.querySelector('.carousel-comunicado-img') : null;
+                if (img && img.offsetWidth > 0) {
+                    modalBody.style.width = img.offsetWidth + 'px';
+                }
+            }
+
             if (modalComunicado && typeof bootstrap !== 'undefined') {
+                modalComunicado.addEventListener('shown.bs.modal', function () {
+                    requestAnimationFrame(function () { ajustarAnchoModal(); });
+                });
+                if (carouselComunicado) {
+                    carouselComunicado.addEventListener('slid.bs.carousel', function () {
+                        requestAnimationFrame(function () { ajustarAnchoModal(); });
+                    });
+                    [].forEach.call(carouselComunicado.querySelectorAll('.carousel-comunicado-img'), function (img) {
+                        img.addEventListener('load', ajustarAnchoModal);
+                    });
+                }
                 setTimeout(function () {
                     var m = new bootstrap.Modal(modalComunicado);
                     m.show();
