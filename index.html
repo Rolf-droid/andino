@@ -931,10 +931,12 @@
                         img.addEventListener('load', ajustarAnchoModal);
                     });
                 }
-                setTimeout(function () {
-                    var m = new bootstrap.Modal(modalComunicado);
-                    m.show();
-                }, 800);
+                // Mostrar modal de comunicado desactivado temporalmente.
+                // Para reactivarlo en el futuro, descomentar el bloque siguiente:
+                // setTimeout(function () {
+                //     var m = new bootstrap.Modal(modalComunicado);
+                //     m.show();
+                // }, 800);
             }
         });
     </script>
