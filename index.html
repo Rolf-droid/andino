@@ -67,12 +67,18 @@
             object-fit: contain;
             object-position: center;
         }
+        /* Ajuste del banner en pantallas pequeñas para mostrar mejor la imagen */
+        @media (max-width: 576px) {
+            .banner-img {
+                max-height: 135px !important;
+            }
+        }
     </style>
     <div class="modal fade" id="modalComunicado" tabindex="-1" aria-labelledby="modalComunicadoLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content border-0 shadow">
                 <div class="modal-header text-white border-0" style="background-color: #ae0c26;">
-                    <h5 class="modal-title fw-bold" id="modalComunicadoLabel"><i class="fas fa-bullhorn me-2"></i>Comunicado</h5>
+                    <h5 class="modal-title fw-bold" id="modalComunicadoLabel"></h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body p-0 modal-body-comunicado">
